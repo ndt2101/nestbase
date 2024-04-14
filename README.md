@@ -4,7 +4,7 @@
 
 ## Requirement
 
-- Node version 18
+- Node version 18.18.2
 
 ## INSTALLATION
 ...
