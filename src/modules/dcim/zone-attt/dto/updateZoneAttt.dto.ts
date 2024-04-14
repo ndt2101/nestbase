@@ -1,0 +1,40 @@
+import { IsPostgreUnique } from '@common/validations/isPostgreUnique.validator';
+import { IsInt, IsNotEmpty, IsOptional, MaxLength } from 'class-validator';
+import { Expose } from 'class-transformer';
+import { BaseDto } from '@base/base.dto';
+
+export class UpdateZoneAtttDto extends BaseDto {
+  @Expose()
+  @IsNotEmpty()
+  context?: {
+    params: any;
+  };
+  @IsPostgreUnique([
+    {
+      tableName: 'zone_attt',
+      column: 'name',
+      message: 'Name is already exist!',
+      isUpdate: true,
+    },
+  ])
+  @MaxLength(100, {
+    message: 'Name must be less than or equal to 100 characters',
+  })
+  name: string;
+
+  @Expose()
+  @IsNotEmpty()
+  zone_group: string;
+
+  @Expose()
+  @IsNotEmpty()
+  @IsInt()
+  security_level: number;
+
+  @Expose()
+  @IsOptional()
+  @MaxLength(1000, {
+    message: 'Description must be less than or equal to 1000 characters',
+  })
+  description: string;
+}

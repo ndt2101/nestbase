@@ -1,0 +1,52 @@
+[
+    {
+        "title": "Create role",
+        "name": "create-role",
+        "group": "Role"
+    },
+    {
+        "title": "Read role",
+        "name": "read-role",
+        "group": "Role"
+    },
+    {
+        "title": "Update role",
+        "name": "update-role",
+        "group": "Role"
+    },
+    {
+        "title": "Delete role",
+        "name": "delete-role",
+        "group": "Role"
+    },
+    {
+        "title": "Assign role user",
+        "name": "assign-role-user",
+        "group": "Role"
+    },
+    {
+        "title": "Unassign role user",
+        "name": "unassign-role-user",
+        "group": "Role"
+    },
+    {
+        "title": "Create department",
+        "name": "create-department",
+        "group": "Department"
+    },
+    {
+        "title": "Update department",
+        "name": "update-department",
+        "group": "Department"
+    },
+    {
+        "title": "Read department",
+        "name": "read-department",
+        "group": "Department"
+    },
+    {
+        "title": "Delete department",
+        "name": "delete-department",
+        "group": "Department"
+    }
+]

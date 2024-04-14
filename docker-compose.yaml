@@ -1,0 +1,17 @@
+version: "3.4"
+
+services:
+  app:
+    image: 10.60.129.132:8890/it_brain_backend:1.0
+    container_name: it_brain_backend
+    volumes:
+      - ./:/home/node/app
+    ports:
+      - "8000:8000" 
+    restart: unless-stopped
+    tty: true
+    command: sh -c "chmod -R 777 ./ && npm run start:dev"
+    #networks:
+      #- it_brain
+#networks:
+  #it_brain:
