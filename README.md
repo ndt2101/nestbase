@@ -1,4 +1,4 @@
-# IT_brain_backend
+# Nessjs Base
 
 
 
@@ -7,14 +7,8 @@
 - Node version 18
 
 ## INSTALLATION
+...
 
-```
-git clone http://10.60.17.143:8888/it-brain/source/it_brain_backend.git
-cd it_brain_backend
-git remote add origin http://10.60.17.143:8888/it-brain/source/it_brain_backend.git
-git checkout origin develop
-unzip node_module.zip
-```
 ## Command start project
 npm run start hoặc npm run start:dev
 
